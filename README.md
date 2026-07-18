@@ -1,22 +1,11 @@
-# Lantern Cottage holding page
+# Lantern Cottage
 
-A full-screen GitHub Pages holding page using the aerial photograph.
+This version uses the existing `house.jpeg` image.
 
-## Files
-
-- `index.html`
-- `style.css`
-- `hero.jpg`
-- `CNAME`
-
-## Update your existing repository
-
-Replace the current website files with these files, then run:
+Replace `index.html`, `style.css`, `README.md`, and `CNAME` in the repository, keep `house.jpeg`, then run:
 
 ```bash
 git add .
-git commit -m "Add aerial hero holding page"
+git commit -m "Polish Lantern Cottage homepage"
 git push
 ```
-
-GitHub Pages should update automatically within a minute or two.

@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lantern Cottage, Broxbourne, Hertfordshire.">
+  <meta name="theme-color" content="#182018">
+  <meta name="description" content="Lantern Cottage, Carneles Green, Broxbourne, Hertfordshire.">
   <title>Lantern Cottage</title>
+  <link rel="preload" href="house.jpeg" as="image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="hero">
-    <div class="overlay"></div>
-
-    <section class="content" aria-labelledby="site-title">
-      <p class="eyebrow">Maria and Chris are moving to</p>
-
+    <div class="hero__shade" aria-hidden="true"></div>
+    <section class="hero__content" aria-labelledby="page-title">
+      <p class="hero__intro">Maria and Chris are moving to</p>
+      <h1 id="page-title">Lantern Cottage</h1>
+      <div class="hero__rule" aria-hidden="true"></div>
       <address>
         Lantern Cottage<br>
         Carneles Green<br>
@@ -23,14 +25,10 @@
         EN10 7QB
       </address>
     </section>
-
-    <footer>
-      <small>&copy; <span id="year"></span> Lantern Cottage</small>
-    </footer>
+    <p class="hero__credit">&copy; <span id="year"></span> Lantern Cottage</p>
   </main>
-
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
