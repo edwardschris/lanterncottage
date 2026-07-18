@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lantern Cottage, Broxbourne, Hertfordshire.">
+  <title>Lantern Cottage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="site-title">
+      <div class="photo-wrap">
+        <img
+          class="house-photo"
+          src="house.jpg"
+          alt="Lantern Cottage"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+        >
+        <div class="photo-placeholder" role="img" aria-label="Lantern Cottage photo placeholder">
+          <span>Add your cottage photo as <strong>house.jpg</strong></span>
+        </div>
+      </div>
+
+      <div class="content">
+        <p class="eyebrow">Welcome to</p>
+        <h1 id="site-title">Lantern Cottage</h1>
+        <address>
+          Carneles Green<br>
+          Church Lane<br>
+          Broxbourne<br>
+          Hertfordshire<br>
+          EN10 7QB
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Lantern Cottage</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
